@@ -3,10 +3,12 @@ import './style.css';
 
 const Header = () => (
   <div className="header">
-    <a>Scenarioz</a>
-    <a>Scénarios</a>
-    <a>Créateurs</a>
-    <a><i class="fas fa-bars" /></a>
+    <a href="#">Scenarioz</a>
+    <div className="header__navigation">
+      <a className="header__navigation--element" href="#">Scénarios</a>
+      <a className="header__navigation--element" href="#">Créateurs</a>
+    </div>
+    <a href="#"><i class="fas fa-bars" /></a>
   </div>
 );
 

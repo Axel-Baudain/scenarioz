@@ -13,7 +13,7 @@
 {
   text-align: center;
   color: white;
-  min-height: 30vh;
+  min-height: 100vh;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
