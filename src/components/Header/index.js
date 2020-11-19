@@ -3,7 +3,10 @@ import './style.css';
 
 const Header = () => (
   <div className="header">
-    Header
+    <a>Scenarioz</a>
+    <a>Scénarios</a>
+    <a>Créateurs</a>
+    <a><i class="fas fa-bars" /></a>
   </div>
 );
 

@@ -13,7 +13,7 @@ const App = () => (
       <div className="content__header" style={{ backgroundImage: `url('${image}')`, backgroundRepeat: `no-repeat`, backgroundSize: `cover`, backgroundPosition: `center` }}>
         <div className="header__text">
           <h1 className="header__title">Scenarioz</h1>
-          <p className="header__subtitle">La bibliothèque de scénarios faite par un MJ, pour des MJs.</p>
+          <p className="header__subtitle">La bibliothèque de scénarios, faite par un Maître de Jeux, pour les Maîtres de Jeux.</p>
         </div>
       </div>
     </div>

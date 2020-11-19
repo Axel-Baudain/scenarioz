@@ -22,11 +22,13 @@
 
 .header__title
 {
-  font-size: 3rem;
+  font-size: calc(2rem + 1vw);
   font-weight: bold;
+  text-shadow: 1px 1px 0px black;
 }
 
 .header__subtitle
 {
-  font-size: 2rem;
+  font-size: calc(1.5rem + 1vw);
+  text-shadow: 1px 1px 0px black;
 }
