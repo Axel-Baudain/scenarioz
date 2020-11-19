@@ -1,4 +1,9 @@
-# Getting Started with Create React App
+# Scenarioz - Projet
+Scenarioz est un site-bibliothèque de scénarios qui pourront être proposés par des maîtres de jeux de rôles, notés et classés selon la pertinence des contenus fournis.
+
+Le site est bien sûr en cours de développement 🙂
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
