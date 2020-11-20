@@ -32,3 +32,8 @@
   font-size: calc(1.5rem + 1vw);
   text-shadow: 1px 1px 0px black;
 }
+
+.active
+{
+  color: white;
+}
