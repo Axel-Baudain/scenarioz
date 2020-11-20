@@ -3,7 +3,7 @@ import './style.css';
 
 const Footer = () => (
   <div className="footer">
-    footer
+    &copy; Scenarioz - Tous droits réservés.
   </div>
 );
 

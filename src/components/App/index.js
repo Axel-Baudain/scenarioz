@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, Link } from 'react-router-dom';
 import './style.css';
 
 import Header from '../Header';
@@ -19,6 +19,7 @@ const App = () => (
         <div className="header__text">
           <h1 className="header__title">Scenarioz</h1>
           <p className="header__subtitle">La bibliothèque de scénarios, faite par un Maître de Jeux, pour les Maîtres de Jeux.</p>
+          <Link ><button>Trouver le scénario parfait</button></Link>
         </div>
       </div>
     </div>

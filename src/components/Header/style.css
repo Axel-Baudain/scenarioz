@@ -12,5 +12,15 @@
 .header__navigation--element
 {
   margin: 0 1rem;
+  color: rgb(136, 136, 136);
+}
+
+.header__navigation--element:hover
+{
+  color: white;
+}
+
+.active
+{
   color: white;
 }
