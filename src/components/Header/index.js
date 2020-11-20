@@ -1,14 +1,16 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
+
 import './style.css';
 
 const Header = () => (
   <div className="header">
-    <a href="#">Scenarioz</a>
+    <NavLink className="header__navigation--element" to="/">Scenarioz</NavLink>
     <div className="header__navigation">
-      <a className="header__navigation--element" href="#">Scénarios</a>
-      <a className="header__navigation--element" href="#">Créateurs</a>
+      <NavLink className="header__navigation--element" to="/scenarios">Scénarios</NavLink>
+      <NavLink className="header__navigation--element" to="/creators">Créateurs</NavLink>
     </div>
-    <a href="#"><i class="fas fa-bars" /></a>
+    <i class="fas fa-bars" />
   </div>
 );
 
