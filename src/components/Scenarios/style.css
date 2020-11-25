@@ -2,3 +2,9 @@
 {
   min-height: 100vh;
 }
+
+.scenarios__header
+{
+  margin-top: 1rem;
+  text-align: center;
+}

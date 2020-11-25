@@ -1,0 +1,25 @@
+.searchbar
+{
+  position: relative;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchbar__icon
+{
+  position: absolute;
+  padding: 0.5rem;
+  left: 0rem;
+  z-index: 1;
+}
+
+.searchbar__input
+{
+  position: relative;
+  width: 100%;
+  padding: 0.5rem;
+  padding-left: 2rem;
+}
