@@ -105,7 +105,7 @@ function exampleReducer(state, action) {
     case 'CHANGE_DIRECTION':
       return { ...state, direction: action.direction, visible: false }
     case 'CHANGE_DISPLAY':
-        return { ...state, visible: !state.visible }
+      return { ...state, visible: !state.visible }
     default:
       throw new Error()
   }
@@ -143,25 +143,28 @@ function App() {
 
         <Sidebar.Pusher dimmed={dimmed && visible}>
           <Segment id="global__container">
-              <WebHeader isMenuOpened={state.visible} switchSidebarDisplay={dispatch} />
-              <Switch>
-                <Route exact path="/">
-                  <div className="content__home">
-                    <div className="home__text">
-                      <h1 className="home__title">Scenarioz</h1>
-                      <p className="home__subtitle">La bibliothèque de scénarios, faite par un Maître de Jeux, pour les Maîtres de Jeux.</p>
-                      <Link to="/scenarios" className="home__button">Trouver le scénario parfait</Link>
-                    </div>
+
+            {/* CONTENT STARTS HERE */}
+            <WebHeader isMenuOpened={state.visible} switchSidebarDisplay={dispatch} />
+            <Switch>
+              <Route exact path="/">
+                <div className="content__home">
+                  <div className="home__text">
+                    <h1 className="home__title">Scenarioz</h1>
+                    <p className="home__subtitle">La bibliothèque de scénarios, faite par un Maître de Jeux, pour les Maîtres de Jeux.</p>
+                    <Link to="/scenarios" className="home__button">Trouver le scénario parfait</Link>
                   </div>
-                </Route>
-                <Route exact path="/scenarios">
-                  <Scenarios />
-                </Route>
-                <Route exact path="/creators">
-                  <Creators />
-                </Route>
-              </Switch>
-              <Footer />
+                </div>
+              </Route>
+              <Route exact path="/scenarios">
+                <Scenarios />
+              </Route>
+              <Route exact path="/creators">
+                <Creators />
+              </Route>
+            </Switch>
+            <Footer />
+            {/* CONTENT ENDS HERE */}
           </Segment>
         </Sidebar.Pusher>
       </Sidebar.Pushable>
