@@ -9,6 +9,14 @@
   font-size: calc(1rem + 1vw);
 }
 
+.sidebar__button
+{
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
 .header__navigation--element
 {
   margin: 0 1rem;
@@ -23,4 +31,5 @@
 .active
 {
   color: white;
+  border-bottom: 1px solid white;
 }

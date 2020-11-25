@@ -109,7 +109,7 @@ function exampleReducer(state, action) {
   }
 }
 
-function SidebarExampleTransitions() {
+function App() {
   const [state, dispatch] = React.useReducer(exampleReducer, {
     animation: 'overlay',
     direction: 'right',
@@ -121,7 +121,7 @@ function SidebarExampleTransitions() {
   const vertical = direction === 'bottom' || direction === 'top'
 
   return (
-    <div>
+    <div className="app">
       <Sidebar.Pushable as={Segment} id="parent__container" style={{ overflow: 'hidden' }}>
         {vertical && (
           <HorizontalSidebar
@@ -165,11 +165,5 @@ function SidebarExampleTransitions() {
     </div>
   )
 }
-
-const App = () => (
-  <div className="app">
-    <SidebarExampleTransitions />
-  </div>
-);
 
 export default App;

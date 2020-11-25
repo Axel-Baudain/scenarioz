@@ -10,7 +10,7 @@ const Header = () => (
       <NavLink className="header__navigation--element" exact to="/scenarios">Scénarios</NavLink>
       <NavLink className="header__navigation--element" exact to="/creators">Créateurs</NavLink>
     </div>
-    <i class="fas fa-bars" />
+    <button type="button" className="sidebar__button"><i class="fas fa-bars" /></button>
   </div>
 );
 
