@@ -23,48 +23,6 @@ import HomePage from '../HomePage';
 
 const image = 'https://images.unsplash.com/photo-1605142859862-978be7eba909?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80';
 
-const HorizontalSidebar = ({ animation, direction, visible }) => (
-  <Sidebar
-    as={Segment}
-    animation={animation}
-    direction={direction}
-    visible={visible}
-  >
-    <Grid textAlign='center'>
-      <Grid.Row columns={1}>
-        <Grid.Column>
-          <Header as='h3'>
-            <WebHeader />
-            <Switch>
-              <Route exact path="/">
-                <HomePage />
-              </Route>
-              <Route exact path="/scenarios">
-                <Scenarios />
-              </Route>
-              <Route exact path="/creators">
-                <Creators />
-              </Route>
-            </Switch>
-            <Footer />
-          </Header>
-        </Grid.Column>
-      </Grid.Row>
-      <Grid.Row columns={3}>
-        <Grid.Column>
-          <Image src='/images/wireframe/media-paragraph.png' />
-        </Grid.Column>
-        <Grid.Column>
-          <Image src='/images/wireframe/media-paragraph.png' />
-        </Grid.Column>
-        <Grid.Column>
-          <Image src='/images/wireframe/media-paragraph.png' />
-        </Grid.Column>
-      </Grid.Row>
-    </Grid>
-  </Sidebar>
-)
-
 const VerticalSidebar = ({ animation, direction, visible }) => (
   <Sidebar
     as={Menu}
@@ -121,13 +79,6 @@ function App() {
   return (
     <div className="app">
       <Sidebar.Pushable as={Segment} id="parent__container" style={{ overflow: 'hidden' }}>
-        {vertical && (
-          <HorizontalSidebar
-            animation={animation}
-            direction={direction}
-            visible={visible}
-          />
-        )}
         {!vertical && (
           <VerticalSidebar
             animation={animation}
