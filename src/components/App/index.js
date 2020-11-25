@@ -1,13 +1,7 @@
 import React from 'react';
-import { Route, Switch, Link } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import {
-  Container,
-  Button,
-  Checkbox,
-  Grid,
-  Header,
   Icon,
-  Image,
   Menu,
   Segment,
   Sidebar,
@@ -20,8 +14,6 @@ import Footer from '../Footer';
 import Scenarios from '../Scenarios';
 import Creators from '../Creators';
 import HomePage from '../HomePage';
-
-const image = 'https://images.unsplash.com/photo-1605142859862-978be7eba909?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80';
 
 const VerticalSidebar = ({ switchSidebarDisplay, animation, direction, visible }) => (
   <Sidebar
