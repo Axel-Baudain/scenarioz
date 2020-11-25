@@ -2,6 +2,19 @@
   background-color: #FFEDCB;
   display: flex;
   flex-flow: column nowrap;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#parent__container
+{
+  border: none;
+  padding: 0;
+}
+
+#global__container
+{
+  padding: 0;
+  border: none;
 }
 
 .content__container {
@@ -22,12 +35,6 @@
   background: linear-gradient( rgba(33, 82, 88, 0.7), rgba(33, 82, 88, 0.7)), url('https://images.unsplash.com/photo-1605142859862-978be7eba909?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
   background-size: cover;
   background-position: center;
-  border: 2px solid red;
-}
-
-.home__text
-{
-  border: 1px solid red;
 }
 
 .home__title
