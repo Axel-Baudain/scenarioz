@@ -9,6 +9,12 @@
   font-size: calc(1rem + 1vw);
 }
 
+.main__title
+{
+  font-family: "Dancing Script", sans-serif;
+  border-bottom: none;
+}
+
 .sidebar__button
 {
   background-color: transparent;
@@ -17,26 +23,30 @@
   cursor: pointer;
 }
 
-.header__navigation--element
+.header__navigation--element:not(first)
 {
   margin: 0 1rem;
-  color: rgb(136, 136, 136);
+}
+
+.header__navigation--element
+{
+  color: rgb(68, 68, 68);
+  transition: 0.5s;
+  font-weight: bold;
 }
 
 .header__navigation--element:hover
 {
+  transition: 0.25s;
   color: white;
-  border-bottom: 1px solid white;
 }
 
 .header__navigation--element:focus
 {
-  border-bottom: 1px solid white;
   outline: none;
 }
 
 .active
 {
   color: white;
-  border-bottom: 1px solid white;
 }

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './style.css';
 
 const HomePage = () => (
-  <div className="content__home">
+  <div className="home__content">
     <div className="home__text">
       <h1 className="home__title">Scenarioz</h1>
       <p className="home__subtitle">La bibliothèque de scénarios, faite par un Maître de Jeux, pour les Maîtres de Jeux.</p>
