@@ -144,6 +144,7 @@ function App() {
         <Sidebar.Pusher dimmed={dimmed && visible}>
           <Segment id="global__container">
 
+
             {/* CONTENT STARTS HERE */}
             <WebHeader isMenuOpened={state.visible} switchSidebarDisplay={dispatch} />
             <Switch>
@@ -165,6 +166,8 @@ function App() {
             </Switch>
             <Footer />
             {/* CONTENT ENDS HERE */}
+
+
           </Segment>
         </Sidebar.Pusher>
       </Sidebar.Pushable>
