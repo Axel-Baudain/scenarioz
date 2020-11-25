@@ -26,6 +26,13 @@
 .header__navigation--element:hover
 {
   color: white;
+  border-bottom: 1px solid white;
+}
+
+.header__navigation--element:focus
+{
+  border-bottom: 1px solid white;
+  outline: none;
 }
 
 .active

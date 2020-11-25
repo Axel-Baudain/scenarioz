@@ -104,6 +104,8 @@ function exampleReducer(state, action) {
       return { ...state, dimmed: action.dimmed }
     case 'CHANGE_DIRECTION':
       return { ...state, direction: action.direction, visible: false }
+    case 'CHANGE_DISPLAY':
+        return { ...state, visible: !state.visible }
     default:
       throw new Error()
   }
@@ -111,7 +113,7 @@ function exampleReducer(state, action) {
 
 function App() {
   const [state, dispatch] = React.useReducer(exampleReducer, {
-    animation: 'overlay',
+    animation: 'push',
     direction: 'right',
     dimmed: false,
     visible: false,
@@ -119,6 +121,7 @@ function App() {
 
   const { animation, dimmed, direction, visible } = state
   const vertical = direction === 'bottom' || direction === 'top'
+
 
   return (
     <div className="app">
@@ -140,7 +143,7 @@ function App() {
 
         <Sidebar.Pusher dimmed={dimmed && visible}>
           <Segment id="global__container">
-              <WebHeader />
+              <WebHeader isMenuOpened={state.visible} switchSidebarDisplay={dispatch} />
               <Switch>
                 <Route exact path="/">
                   <div className="content__home">
