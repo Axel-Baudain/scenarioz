@@ -19,6 +19,7 @@ import WebHeader from '../Header';
 import Footer from '../Footer';
 import Scenarios from '../Scenarios';
 import Creators from '../Creators';
+import HomePage from '../HomePage';
 
 const image = 'https://images.unsplash.com/photo-1605142859862-978be7eba909?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80';
 
@@ -36,13 +37,7 @@ const HorizontalSidebar = ({ animation, direction, visible }) => (
             <WebHeader />
             <Switch>
               <Route exact path="/">
-                <div fluid className="content__home">
-                  <div className="home__text">
-                    <h1 className="home__title">Scenarioz</h1>
-                    <p className="home__subtitle">La bibliothèque de scénarios, faite par un Maître de Jeux, pour les Maîtres de Jeux.</p>
-                    <Link to="/scenarios" className="home__button">Trouver le scénario parfait</Link>
-                  </div>
-                </div>
+                <HomePage />
               </Route>
               <Route exact path="/scenarios">
                 <Scenarios />
