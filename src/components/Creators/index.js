@@ -8,10 +8,9 @@ const Creators = () => (
   <div className="creators">
     <div className="creators__header">
       <h1 className="creators__title">
-        Liste des scénarios
+        Liste des créateurs
       </h1>
       <SearchBar />
-      {/* research */}
       {/* filter */}
     </div>
   </div>

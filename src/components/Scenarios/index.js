@@ -10,7 +10,6 @@ const Scenarios = () => (
         Liste des scénarios
       </h1>
       <SearchBar />
-      {/* research */}
       {/* filter */}
     </div>
   </div>
