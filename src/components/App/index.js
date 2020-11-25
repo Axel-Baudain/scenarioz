@@ -23,7 +23,7 @@ import HomePage from '../HomePage';
 
 const image = 'https://images.unsplash.com/photo-1605142859862-978be7eba909?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80';
 
-const VerticalSidebar = ({ animation, direction, visible }) => (
+const VerticalSidebar = ({ switchSidebarDisplay, animation, direction, visible }) => (
   <Sidebar
     as={Menu}
     animation={animation}
@@ -34,17 +34,22 @@ const VerticalSidebar = ({ animation, direction, visible }) => (
     visible={visible}
     width='thin'
   >
+    <Menu.Item onClick={() => {
+        console.log("Okay");
+        switchSidebarDisplay({
+          type: 'CHANGE_DISPLAY'
+        });
+      }} as='a'>
+      <Icon name='close' />
+      Fermer le menu
+    </Menu.Item>
     <Menu.Item as='a'>
       <Icon name='home' />
-      Home
+      Accueil
     </Menu.Item>
     <Menu.Item as='a'>
-      <Icon name='gamepad' />
-      Games
-    </Menu.Item>
-    <Menu.Item as='a'>
-      <Icon name='camera' />
-      Channels
+      <Icon name='user' />
+      Se connecter
     </Menu.Item>
   </Sidebar>
 )
@@ -66,9 +71,9 @@ function exampleReducer(state, action) {
 
 function App() {
   const [state, dispatch] = React.useReducer(exampleReducer, {
-    animation: 'push',
+    animation: 'overlay',
     direction: 'right',
-    dimmed: false,
+    dimmed: true,
     visible: false,
   })
 
@@ -84,6 +89,7 @@ function App() {
             animation={animation}
             direction={direction}
             visible={visible}
+            switchSidebarDisplay={dispatch}
           />
         )}
 
