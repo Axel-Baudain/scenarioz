@@ -11,7 +11,23 @@ const Creators = () => (
         Liste des créateurs
       </h1>
       <SearchBar />
-      {/* filter */}
+      <div className="filter__container">
+        <select>
+          <option>-- Classer --</option>
+          <option>Choix 1</option>
+          <option>Choix 2</option>
+        </select>
+        <select>
+          <option>-- Classer --</option>
+          <option>Choix 1</option>
+          <option>Choix 2</option>
+        </select>
+        <select>
+          <option>-- Classer --</option>
+          <option>Choix 1</option>
+          <option>Choix 2</option>
+        </select>
+      </div>
     </div>
   </div>
 );
